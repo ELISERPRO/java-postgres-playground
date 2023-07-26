@@ -10,7 +10,18 @@ public class App {
     private static final String JDBC_URL = "jdbc:postgresql://localhost/postgres";
 
     public static void main(String[] args) {
-        new App();
+        
+        System.out.println("Minha Aula de Aplicação");
+        System.out.println();
+        var idade= 40;
+        var peso= 82;
+        var sexo= 'F';
+        var possuideficiencia = false;
+        System.out.println("Meu peso é " + peso);
+        System.out.println("Minha idade é " + idade);
+        System.out.println("Sexo " + sexo);
+        System.out.println("Possui Deficiencia: " + possuideficiencia);
+
     }
 
     public App(){
