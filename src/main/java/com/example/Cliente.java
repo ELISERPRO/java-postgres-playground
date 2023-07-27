@@ -3,6 +3,36 @@ package com.example;
 public class Cliente {
     private double renda;
     private char sexo;
+    private boolean especial;
+
+    public Cliente(){
+        System.out.println("Criando um construtor sem parametros ");
+        double aleatorio = Math.random();
+        if(aleatorio > 0.5)
+            especial = true;
+            
+
+    }
+    public Cliente(double renda, char sexo,int anoNaescimento){
+        this();
+        System.out.println("Criando um construto com parametros ");
+        this.renda = renda;
+        this.sexo = sexo;
+        this.anoNaescimento = anoNaescimento;
+
+
+            
+
+    }
+    public boolean isEspecial() {
+        return especial;
+    }
+
+    public void setEspecial(boolean especial) {
+        this.especial = especial;
+    }
+
+    
     public char getSexo() {
         return sexo;
     }

@@ -11,17 +11,16 @@ class CriancoClasse {
         System.out.println("Renda: " + cliente.getRenda());
         System.out.println("Sexo: " + cliente.getSexo());
         System.out.println("Ano de Nascimento: " + cliente.getAnoNaescimento());
-        
+        System.out.println("Espcial: " + cliente.isEspecial());
         System.out.println();
 
-        Cliente cliente2 = new Cliente();
-        cliente2.setRenda(5000);
-        cliente2.setSexo('M');
-        cliente2.setAnoNaescimento(1984);
+        Cliente cliente2 = new Cliente(12000,'M',1984);
+        
+        
         System.out.println("Renda: " + cliente2.getRenda());
         System.out.println("Sexo: " + cliente2.getSexo());
         System.out.println("Ano de Nascimento: " + cliente2.getAnoNaescimento());
-
+        System.out.println("Espcial: " + cliente2.isEspecial());
     }
     
 }
