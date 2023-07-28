@@ -9,7 +9,7 @@ public class Cliente {
     
     
     public Cliente(){
-        System.out.println("Criando um construtor sem parametros ");
+       // System.out.println("Criando um construtor sem parametros ");
         double aleatorio = Math.random();
         if(aleatorio > 0.5)
             especial = true;
@@ -18,7 +18,7 @@ public class Cliente {
     }
     public Cliente(double renda, char sexo,int anoNaescimento){
         this();
-        System.out.println("Criando um construto com parametros ");
+        // System.out.println("Criando um construto com parametros ");
         this.renda = renda;
         this.sexo = sexo;
         this.anoNaescimento = anoNaescimento;

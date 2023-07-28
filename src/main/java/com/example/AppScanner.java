@@ -9,6 +9,7 @@ public class AppScanner {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite o seu nome: ");
         cliente.setNome(scanner.nextLine());
+    
 
         System.out.println("Digite a Renda: ");
         cliente.setRenda(scanner.nextDouble());
