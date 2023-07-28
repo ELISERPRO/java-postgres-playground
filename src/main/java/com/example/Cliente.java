@@ -4,7 +4,10 @@ public class Cliente {
     private double renda;
     private char sexo;
     private boolean especial;
+    private String nome;
 
+    
+    
     public Cliente(){
         System.out.println("Criando um construtor sem parametros ");
         double aleatorio = Math.random();
@@ -19,9 +22,14 @@ public class Cliente {
         this.renda = renda;
         this.sexo = sexo;
         this.anoNaescimento = anoNaescimento;
+    }
 
 
-            
+        public String getNome() {
+            return nome;
+        }
+        public void setNome(String nome) {
+            this.nome = nome;      
 
     }
     public boolean isEspecial() {
