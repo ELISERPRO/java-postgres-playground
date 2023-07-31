@@ -64,6 +64,10 @@ public class Cliente {
     if (renda >=  0)
         this.renda = renda;
     else System.out.println("A renda é imcompativel ");
+   } 
+
+   public String toString() {
+    return "Cliente:  " + nome + "" + " Ano Nascimento: " + anoNaescimento + " " + "Renda: " + renda;
    }
 
 }
